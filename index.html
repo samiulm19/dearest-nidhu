@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌹 For Nidhu | A Birthday In Bloom</title>
+    <meta name="description" content="A timeless digital rose blooming for Nidhu on her special day.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="vignette"></div>
+
+
+    <div class="spotlight"></div>
+    <div class="ambient-light" id="ambientLight"></div>
+
+    <div class="trigger-overlay" id="triggerOverlay">
+        <div class="glass-card">
+            <div class="card-glow"></div>
+            <div class="rose-icon">🌹</div>
+            <h2 class="title">Dearest Nidhu</h2>
+            <div class="loading-bar-container">
+                <div class="loading-bar" id="loadingBar"></div>
+            </div>
+            <p class="status-text" id="statusText">Contemplating the cosmos...</p>
+            <button class="start-button" id="startButton" disabled>
+                <span class="btn-text">Unfold The Bloom</span>
+                <span class="btn-shine"></span>
+            </button>
+        </div>
+    </div>
+
+    <div class="scene">
+        <div class="rose-wrapper" id="roseWrapper">
+            <div class="stem-group">
+                <div class="stem" id="stem">
+                    <div class="stem-highlight"></div>
+                </div>
+                <div class="thorn thorn-1" id="thorn1"></div>
+                <div class="thorn thorn-2" id="thorn2"></div>
+                <div class="leaf leaf-left" id="leafLeft">
+                    <div class="leaf-vein"></div>
+                </div>
+                <div class="leaf leaf-right" id="leafRight">
+                    <div class="leaf-vein"></div>
+                </div>
+            </div>
+
+            <div class="calyx" id="calyx"></div>
+
+            <div class="rose-head" id="roseHead">
+                <div class="rose-glow"></div>
+                <div class="rose-glow-inner"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="end-text" id="endText">
+        <p class="tagline" id="tagline">in an infinite universe, you are poetry🌹</p>
+        <span class="rose-emoji"></span>
+    </div>
+
+    <div id="fallingPetals"></div>
+
+    <!-- Envelope notification that pops up above the rose after blooming -->
+    <div class="notif-chip" id="notifChip">
+        <svg viewBox="0 0 60 44" class="notif-envelope-svg">
+            <rect x="3" y="3" width="54" height="38" rx="4" fill="none" stroke="#E50040" stroke-width="4.5" />
+            <path d="M6 8 L30 26 L54 8" fill="none" stroke="#E50040" stroke-width="4.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </svg>
+    </div>
+
+    <!-- Popup letter, opened by tapping the envelope -->
+    <div class="letter-overlay" id="letterOverlay">
+        <div class="letter-card">
+            <button class="letter-close" id="letterClose" aria-label="Close">&times;</button>
+            <div class="letter-header">To Nidhu // On Your Birthday</div>
+            <div class="letter-body" id="letterBody"></div>
+            <div class="letter-sign">— Samiul</div>
+        </div>
+    </div>
+
+    <!-- Background Audio & Equalizer Toggle -->
+    <audio id="bgMusic" src="MorningLightontheWater.mp3" preload="auto" loop></audio>
+
+    <button class="music-toggle" id="musicToggle" aria-label="Toggle Background Music" title="Toggle Music">
+        <div class="equalizer" id="equalizer">
+            <span class="eq-bar eq-bar-1"></span>
+            <span class="eq-bar eq-bar-2"></span>
+            <span class="eq-bar eq-bar-3"></span>
+            <span class="eq-bar eq-bar-4"></span>
+        </div>
+        <span class="music-label" id="musicLabel">Music</span>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
